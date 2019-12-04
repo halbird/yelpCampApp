@@ -43,3 +43,8 @@ a.navbar-brand {
 .light-background {
     background-color: #eeeeeeb5;
 }
+
+.user-forms {
+    padding: 10px 0 30px 0;
+    text-align: center;
+}
