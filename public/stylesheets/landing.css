@@ -81,3 +81,10 @@ body {
     background-color: #bdd4c6;
     color: black;
 }
+
+.navbar-default {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+}
