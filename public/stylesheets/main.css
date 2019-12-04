@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+}
+body {
+    background-image: url(https://oregonforests.org/sites/default/files/2017-06/1_2_4_Old_Growth_Redwood.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 65px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.delete-form {
+    display: inline;
+}
+
+.navbar-default {
+    background-color: #eee;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+}
+
+.thumbnail, .well, .jumbotron {
+    border: 3px solid #bdd4c6;
+}
+
+a.navbar-brand {
+    font-size: 25px;
+    color: black;
+}
+
+.theme-color {
+    background-color: #bdd4c6;
+    color: black;
+}
+
+.light-background {
+    background-color: #eeeeeeb5;
+}
