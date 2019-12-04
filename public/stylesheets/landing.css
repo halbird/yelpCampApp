@@ -36,15 +36,15 @@ body {
     animation-delay: 10s;
 }
 .slideshow li:nth-child(3) {
-    background-image: url(http://www.seattlemag.com/sites/default/files/field/image/1-lead_23.jpg);
+    background-image: url(https://www.seattlemag.com/sites/default/files/field/image/1-lead_23.jpg);
     animation-delay: 20s;
 }
 .slideshow li:nth-child(4) {
-    background-image: url(http://www.seattlemag.com/sites/default/files/3_13.jpg);
+    background-image: url(https://www.seattlemag.com/sites/default/files/3_13.jpg);
     animation-delay: 30s;
 }
 .slideshow li:nth-child(5) {
-    background-image: url(http://www.seattlemag.com/sites/default/files/5_7.jpg);
+    background-image: url(https://www.seattlemag.com/sites/default/files/5_7.jpg);
     animation-delay: 40s;
 }
 
