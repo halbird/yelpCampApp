@@ -15,7 +15,7 @@ var express = require("express"),
     campgroundRoutes = require("./routes/campgrounds"),
     authenticationRoutes = require("./routes/index");
 
-mongoose.connect("mongodb://localhost/yelpCamp", {useNewUrlParser: true, useFindAndModify: false, useUnifiedTopology: true}); //connected to and created yelpCamp DB
+mongoose.connect("mongodb://heroku_3ng39r1n:dk6q59cuuq75vom5m3qd39qhdg@ds351628.mlab.com:51628/heroku_3ng39r1n", {useNewUrlParser: true, useFindAndModify: false, useUnifiedTopology: true}); //connected to and created yelpCamp DB
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
@@ -50,6 +50,6 @@ app.use("/", authenticationRoutes);
 app.use("/campgrounds", campgroundRoutes); 
 app.use("/campgrounds/:id/comments", commentRoutes);
 
-app.listen(3000, function(){
+app.listen(process.env.PORT, function(){
     console.log("Starting up yelpCamp server");
 });
