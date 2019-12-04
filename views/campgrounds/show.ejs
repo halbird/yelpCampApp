@@ -5,9 +5,12 @@
         <div class="col-md-3 light-background">
             <p class="lead"></p>
             <div class="list-group">
-                <li class="list-group-item"><a href="/">Home Page</a></li>
+                <a href="/" class="list-group-item btn btn-default">Home Page</a>
+                <a href="/campgrounds/" class="list-group-item btn btn-default">Show All Campgrounds</a>
+                <a href="/campgrounds/new" class="list-group-item btn btn-default">Add A New Campground</a>
+                <!-- <li class="list-group-item"><a href="/">Home Page</a></li>
                 <li class="list-group-item"><a href="/campgrounds/">Show All Campgrounds</a></li>
-                <li class="list-group-item"><a href="/campgrounds/new">Add A New Campground</a></li>
+                <li class="list-group-item"><a href="/campgrounds/new">Add A New Campground</a></li> -->
             </div>
         </div>
         <div class="col-md-9">
@@ -28,7 +31,7 @@
             </div>
             <div class="well">
                 <div class="text-right">
-                    <a class="btn btn-success theme-color" href="/campgrounds/<%= campground._id %>/comments/new">Add a New Comment</a>
+                    <a class="btn btn-default theme-color" href="/campgrounds/<%= campground._id %>/comments/new">Add a New Comment</a>
                 </div>
                 <hr>
                 <% campground.comments.forEach(function(comment){ %>
