@@ -18,7 +18,7 @@ var express = require("express"),
     campgroundRoutes = require("./routes/campgrounds"),
     authenticationRoutes = require("./routes/index");
 
-mongoose.connect(process.env.DB_URL, {
+mongoose.connect("mongodb+srv://hal:obisally23@yelpcampycluster-xstbo.mongodb.net/test?retryWrites=true&w=majority", {
     useNewUrlParser: true, 
     useFindAndModify: false, 
     useUnifiedTopology: true});
