@@ -34,7 +34,7 @@ app.set("view engine", "ejs");
 
 // Passport Configuration
 app.use(require("express-session")({                                
-    secret: "Obi is the cutest and sweetest little brown doggo!",   
+    secret: process.env.SESSIONSECRET,   
     resave: false,                                                  
     saveUninitialized: false
 }));            
